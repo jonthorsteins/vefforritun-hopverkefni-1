@@ -1,6 +1,7 @@
 @import "scss/config";
 
 * {
+  font-size: 16px;
   padding: 0;
   margin: 0;
 }
@@ -11,14 +12,86 @@
   box-sizing: inherit;
 }
 
-html { /* stylelint-disable-line */
+html {
   box-sizing: border-box;
   overflow-x: hidden;
 
   // TODO fleiri grunn stillingar
 }
 
+// font á texta
+p, li { font-family: 'helvetica', sans-serif; }
+h1, h2 { font-family: 'Oswald', sans-serif; }
+
+// stærð á texta
+h1 {font-size: 2em;
+    margin-bottom: 1em;}
+h2 {font-size: 1.5em;}
+
+
+header {
+  text-align: center;
+  background-color: #afb281
+}
+
+.header__content {
+  margin-bottom: 5vh;
+
+
+  li { font-weight: bold;
+       display: inline;}
+
+}
+
+
+.header__cart {
+   display : inline-block;
+
+  p { //text-align: right;
+    }
+
+  img {
+
+    width : 20px;
+    height: 50px;
+
+
+    }
+
+}
+
+
+footer {
+  text-align: center;
+  background-color: #cc9694
+}
+
+.footer__row {
+}
+
+.footer__col {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 5%;
+  padding-bottom: 5em;
+
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 5em;
+  padding-top: 5em;
+
+  ul { list-style-type: none}
+}
+
+
+
+
+
 
 
 // TODO sækja allar sass skrár
-@import "scss/...";
+//@import "scss/list";
