@@ -22,13 +22,62 @@
   }
 
   &__card {
+    height: 100%;
     display: flex;
     flex-direction: column;
+  }
+
+  &__title {
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+  }
+
+  &__info{
+    line-height: 1rem;
+    flex: 1;
+    padding-bottom: $gutter;
+  }
+
+  &__price {
+    font-weight: bold;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  &__info p{
-    line-height: 1rem;
+  &__quantity {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+
+  &__buy {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 34%;
+    align-self: flex-end;
+  }
+
+  &__count {
+    border: 1px solid #000;
+    border-radius: 3px;
+    height: 30px;
+  }
+
+  &__cart {
+    width: 1em;
+  }
+
+  &__button {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background-color: #ffffff;
   }
 
 }
