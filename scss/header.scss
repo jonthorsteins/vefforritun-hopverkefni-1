@@ -1,25 +1,85 @@
-
+@import "config";
 /* Default Haus á vefsíðu */
-header {
+
+.header {
   width : 100%;
-  li:hover,button:hover { color: #ffffff; transition: 0.3s;}
-  text-align: center;
   background-color: #afb281;
-}
+  background-size: cover;
 
-.header__cart {
-  background-color:#afb281;
-  border: none;
 
-  //cart logo
-  img {
+  &__content {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+    padding: $gutter;
+    margin: 0 auto;
+    max-width: $max-width;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &:nth-child(1) {
+      justify-content: center;
+    }
+  }
+
+  &__col {
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &:nth-child(3) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 3em;
+    margin: 0 auto;
+    margin-bottom: $gutter;
+  }
+
+  &__cart {
+    background-color:#afb281;
     border: none;
-    width : 25px;
+  }
+
+  &__image {
+    border: none;
+    width: 25px;
+  }
+
+
+  &__list:hover, &__cart:hover {
+    color: #ffffff;
+    transition: 0.3s;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__item {
+    margin: $gutter/2;
+  }
+
+  &__link {
+    font-style: $font-main;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
   }
 }
 
-
-/* viewport <800px*/
+/* viewport <800px
 @media (max-width: 799px) {
 .header__content {
   margin-bottom: 5vh;
@@ -35,9 +95,9 @@ header {
        display: inline; }}
 
 }
+*/
 
-
-/* viewport fyrir >= 800px */
+/* viewport fyrir >= 800px
 @media (min-width: 799px) {
 
   .header__content {
@@ -54,4 +114,4 @@ header {
          margin: 0.5em;
          display: inline; }}
 
-  }
+  }*/

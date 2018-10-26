@@ -1,12 +1,9 @@
 @import "scss/config";
 
 * {
-  max-width: $max-width;
-  font-size: 16px;
   padding: 0;
   margin: 0;
 }
-
 
 *,
 *::before,
@@ -17,83 +14,25 @@
 html {
   box-sizing: border-box;
   overflow-x: hidden;
-  // TODO fleiri grunn stillingar
+
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media (min-width: $max-width) {
+    margin: 0;
+  }
 }
 
-// font á texta
-p, li { font-family: 'helvetica', sans-serif; }
-h1, h2 { font-family: 'Oswald', sans-serif; }
-
-// stærð á texta fyrir grunnstærð < 800px
-.index__col,header {
-h1 {font-size: 4em;
-    margin-bottom: 0.5em;}
-h2 {font-size: 3.2em;
-    margin-bottom: 1em;
-    padding-left: 0.4em;}
-p  {font-size: 2em;
-    padding-left: 0.5em;}
-
-/* Button-viðmót */
-.text{ button {
-            font-size: 1.2em;
-            border-radius: 5px;
-            background-color : #cc9694;
-            transition: 0.3s;
-            }
-            //þegar farið er yfir takka
-          button:hover{ background-color : #000000; color : #cc9694;}
-        }
+img { /* stylelint-disable-line */
+  max-width: 100%;
 }
 
-.index__row {
-   display: flex;
-   flex-wrap: wrap;
+main { /* stylelint-disable-line */
+  min-height: 100vh;
+  max-width: $max-width;
+  margin: 0 auto;
 }
-
-
-
-/* viewport fyrir undir 800px */
-
-@media (max-width: 799px) {
-
-  .index__col img { width : 100%;
-  flex-direction: column; }
-
-  /* Button-viðmót */
-  .text{ button {
-              padding-top : 0.5em; padding-bottom:0.5em;
-              padding-left :6em;  padding-right:6em;
-              margin-top: 2em; margin-bottom:2em; margin-left: 1em;
-        }}
-
-}
-
-/* viewport fyrir >= 800px */
-@media (min-width: 799px) {
-
-    .index__col img {
-      width : 100%;
-      padding-top: 1em;
-      }
-
-      .index__col {
-      width: 50%;
-      }
-
-      /* Button-viðmót */
-      .text{ button {
-                  padding-top : 0.5em; padding-bottom:0.5em;
-                  padding-left :4em;  padding-right:3em;
-                  margin-top: 2em; margin-bottom:2em; margin-left: 1em;
-            }}
-}
-
-
-
-.card {line-height: $gutter * 3;}
-.main__col {line-height: $gutter * 3; }
-
 
 // TODO sækja allar sass skrár
 @import "scss/header";
