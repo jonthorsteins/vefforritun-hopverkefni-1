@@ -1,0 +1,51 @@
+
+/* Button-útlit */
+button {color : #000000}
+
+.text{ button {
+            font-size: 1.2em;
+            border-radius: 5px;
+            color : #000000;
+            background-color : #cc9694;
+            transition: 0.3s;
+            }
+            //þegar farið er yfir takka
+          button:hover{ background-color : #000000; color : #cc9694;}
+        }
+
+
+/* viewport fyrir undir 800px */
+
+@media (max-width: 799px) {
+
+  /* Button-viðmót */
+  .text{ button {
+              padding-top : 0.5em; padding-bottom:0.5em;
+              padding-left :6em;  padding-right:6em;
+              margin-top: 2em; margin-bottom:2em; margin-left: 1em;
+        }}
+
+}
+
+/* viewport fyrir >= 800px */
+@media (min-width: 799px) {
+
+      /* Button-viðmót */
+      .text{ button {
+                  padding-top : 0.5em; padding-bottom:0.5em;
+                  padding-left :4em;  padding-right:3em;
+                  margin-top: 2em; margin-bottom:2em; margin-left: 1em;
+            }}
+}
+
+
+/* viewport fyrir >= 1450px */
+@media (min-width: 1450px) {
+
+      /* Button-viðmót */
+      .text{ button {
+                  padding-top : 0.5em; padding-bottom:0.5em;
+                  padding-left :5em ;  padding-right:5em;
+                  margin-top: 2em; margin-bottom:2em; margin-left: 1em;
+            }}
+}
