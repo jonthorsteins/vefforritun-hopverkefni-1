@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/jonthorsteins/vefforritun-hopverkefni-1/issues"
   },
-  "homepage": "https://github.com/jonthorsteins/vefforritun-hopverkefni-1#readme"
+  "homepage": "https://github.com/jonthorsteins/vefforritun-hopverkefni-1#readme",
+  "dependencies": {
+    "stylelint-disable-all": "^1.2.0"
+  }
 }
