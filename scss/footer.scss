@@ -7,9 +7,7 @@
   padding: $gutter;
 
   &__content {
-    margin-left: -$gutter;
-    margin-right: -$gutter;
-    padding: $gutter;
+
     margin: 0 auto;
     max-width: $max-width;
   }
@@ -17,6 +15,10 @@
   &__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -$gutter/2;
+    margin-right: -$gutter/2;
+
+    justify-content: space-around;
   }
 
   &__col {
@@ -24,6 +26,8 @@
     flex-direction: column;
     width: 25%;
     text-align: left;
+    padding-left: $gutter/2;
+    padding-right: $gutter/2;
   }
 
   &__title {
@@ -37,12 +41,28 @@
   }
 
   &__item {
-    margin-top: 0.5em;
+    margin-top: 5px;
   }
 
   &__link {
     font-style: $font-main;
     text-decoration: none;
     color: #fcffd2;
+  }
+
+  &__link:hover{
+    color: #ffffff;
+    transition: 0.3s;
+  }
+
+  &__copyright {
+  width: 100%;
+  max-width: $max-width;
+
+  margin: $gutter auto 0;
+  padding-top: $gutter;
+
+  text-align: center;
+  font-size: 0.75rem;
   }
 }

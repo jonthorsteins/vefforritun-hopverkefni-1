@@ -10,7 +10,6 @@
   &__content {
     margin-left: -$gutter;
     margin-right: -$gutter;
-    padding: $gutter;
     margin: 0 auto;
     max-width: $max-width;
   }
@@ -19,6 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: $gutter/2;
 
     &:nth-child(1) {
       justify-content: center;
@@ -26,7 +26,7 @@
   }
 
   &__col {
-    width: 33.33%;
+    width: 33.333333%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -40,21 +40,45 @@
     font-family: $font-heading;
     font-size: 3em;
     margin: 0 auto;
-    margin-bottom: $gutter;
   }
 
   &__cart {
     background-color:#afb281;
     border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    font-family: $font-main;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+
+    &--current {
+      background-color:#afb281;
+      border: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      font-family: $font-main;
+      font-size: 1em;
+      text-decoration: underline;
+      color: black;
+      margin-left: 10px;
+    }
   }
 
   &__image {
     border: none;
-    width: 25px;
+    width: 1.5em;
+    margin: 0;
+    margin-right: 10px;
   }
 
 
-  &__list:hover, &__cart:hover {
+  &__link:hover, &__cart:hover, &__link--current:hover, &__cart--current:hover {
     color: #ffffff;
     transition: 0.3s;
   }
@@ -66,52 +90,25 @@
     align-items: center;
   }
 
+
+
   &__item {
     margin: $gutter/2;
   }
 
   &__link {
-    font-style: $font-main;
+    font-family: $font-main;
     font-size: 1em;
     text-decoration: none;
     font-weight: bold;
     color: black;
+
+    &--current {
+      font-family: $font-main;
+      font-size: 1em;
+      text-decoration: underline;
+      font-weight: bold;
+      color: black;
+    }
   }
 }
-
-/* viewport <800px
-@media (max-width: 799px) {
-.header__content {
-  margin-bottom: 5vh;
-  width: 100%;
-
-  .header__cart {
-    margin-top : 1em;
-    margin-bottom: 1em;}
-
-  li { font-size: 1.2em;
-       font-weight: bold;
-       margin: 0.5em;
-       display: inline; }}
-
-}
-*/
-
-/* viewport fyrir >= 800px
-@media (min-width: 799px) {
-
-  .header__content {
-    margin-bottom: 5vh;
-    width: 100%;
-
-    .header__cart {
-      margin-top : 1em;
-      margin-bottom: 1em;}
-
-
-    li { font-size: 1.2em;
-         font-weight: bold;
-         margin: 0.5em;
-         display: inline; }}
-
-  }*/

@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vöruhúsið</title>
-
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../styles.css">
   </head>
   <header class="header">
   	<div class="header__content">
@@ -20,31 +21,18 @@
         <div class="header__col">
           <nav class="header__nav"></nav>
   		      <ul class="header__list">
-  			      <li class="header__item"><a href="index.html" class="header__link">FORSÍÐA</a></li>
-  			      <li class="header__item"><a href="pages/products.html" class="header__link">VÖRUR</a></li>
-  			      <li class="header__item"><a href="pages/staff.html" class="header__link">STARFSFÓLK</a></li>
+  			      <li class="header__item"><a href="../index.html" class="header__link">FORSÍÐA</a></li>
+  			      <li class="header__item"><a href="./products.html" class="header__link">VÖRUR</a></li>
+  			      <li class="header__item"><a href="./staff.html" class="header__link">STARFSFÓLK</a></li>
   		      </ul>
         </div>
         <div class="header__col">
-          <a href="pages/cart.html" class="header__cart">
-            <img class="header__image" src="img/cart.svg">
-            <p>Karfa(3)</p>
+          <a href="./cart.html" class="header__cart--current">
+            <img class="header__image" src="../img/cart.svg">
+            Karfa(3)
           </a>
         </div>
       </div>
-
-  		<h1>Vöruhúsið</h1>
-      <nav class="header__nav"></nav>
-  		  <ul class="header__list">
-  			 <li style="text-decoration: underline;">FORSÍÐA</li>
-  			 <li onclick="location.href='pages/products.html';">VÖRUR</li>
-  			 <li onclick="location.href='pages/staff.html';">STARFSFÓLK</li>
-  		  </ul>
-      <button onclick="location.href='pages/cart.html';" class="header__cart">
-        <img class="cart" src="img/cart.svg">
-        Karfa(3)
-      </button>
-
   	</div>
   </header>
   <main>
@@ -426,6 +414,7 @@
   			</div>
       </div>
   	</div>
+    <p class="footer__copyright">© 2018 Vöruhúsið</p>
   </footer>
   <body>
 
