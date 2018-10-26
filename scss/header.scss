@@ -1,0 +1,57 @@
+
+/* Default Haus á vefsíðu */
+header {
+  width : 100%;
+  li:hover,button:hover { color: #ffffff; transition: 0.3s;}
+  text-align: center;
+  background-color: #afb281;
+}
+
+.header__cart {
+  background-color:#afb281;
+  border: none;
+
+  //cart logo
+  img {
+    border: none;
+    width : 25px;
+  }
+}
+
+
+/* viewport <800px*/
+@media (max-width: 799px) {
+.header__content {
+  margin-bottom: 5vh;
+  width: 100%;
+
+  .header__cart {
+    margin-top : 1em;
+    margin-bottom: 1em;}
+
+  li { font-size: 1.2em;
+       font-weight: bold;
+       margin: 0.5em;
+       display: inline; }}
+
+}
+
+
+/* viewport fyrir >= 800px */
+@media (min-width: 799px) {
+
+  .header__content {
+    margin-bottom: 5vh;
+    width: 100%;
+
+    .header__cart {
+      margin-top : 1em;
+      margin-bottom: 1em;}
+
+
+    li { font-size: 1.2em;
+         font-weight: bold;
+         margin: 0.5em;
+         display: inline; }}
+
+  }

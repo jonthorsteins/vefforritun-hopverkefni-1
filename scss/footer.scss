@@ -1,0 +1,66 @@
+
+/* Default Footer */
+.footer__row {}
+
+.footer__col {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 5%;
+  padding-bottom: 5em;
+}
+
+
+
+/* viewport fyrir undir 800px */
+
+@media (max-width: 799px) {
+
+  .footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    li {color : white; }
+    h2 {font-size: 2em; margin-bottom : 1em;}
+    margin-top: 5em;
+    padding-top: 5em;
+    line-height: $gutter * 1.5 ; }
+}
+
+
+
+/* viewport fyrir >= 800px */
+@media (min-width: 799px) {
+
+    .footer__content {
+      display: flex;
+      flex-wrap: wrap;
+      li {color : white; }
+      h2 {font-size: 2em; margin-bottom : 1em;}
+      margin-top: 5em;
+      padding-top: 5em;
+      line-height: $gutter * 1.5 ; }
+  }
+
+
+
+
+  footer {
+    text-align: center;
+    background-color: #cc9694;
+    li:hover,button:hover { color: #000000; transition: 0.3s;}
+  }
+
+  .footer__row {}
+
+  .footer__col {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding-left: 5%;
+    padding-bottom: 5em;
+  }
+
+  .footer__content {
+
+    ul { list-style-type: none;}
+  }
