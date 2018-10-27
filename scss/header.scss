@@ -6,12 +6,21 @@
   background-color: #afb281;
   background-size: cover;
 
+  padding-left: $gutter;
+  padding-right: $gutter;
+
+  @media (min-width: $max-width){
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 
   &__content {
     margin-left: -$gutter;
     margin-right: -$gutter;
     margin: 0 auto;
     max-width: $max-width;
+
   }
 
   &__row {
@@ -33,6 +42,13 @@
 
     &:nth-child(3) {
       justify-content: flex-end;
+    }
+
+    @media(max-width: 500px) {
+      width: 100%;
+      &:nth-child(3) {
+        justify-content: center;
+      }
     }
   }
 

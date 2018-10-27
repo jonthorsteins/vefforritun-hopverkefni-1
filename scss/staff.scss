@@ -21,6 +21,9 @@
     margin: 0 0 20px;
     -webkit-perspective: 1000;
 
+    @media(max-width: 500px) {
+      width: 100%;
+    }
   }
 
   &__flip {
@@ -34,7 +37,7 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.3s linear;
-    position: relative;
+    /*position: relative;*/
   }
 
   &__col:hover &__card {
@@ -46,12 +49,15 @@
       backface-visibility: hidden;
       height: 100%;
       width: 100%;
-
     }
 
     &--back {
+      z-index: -5;
       backface-visibility: hidden;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       height: 100%;
       width: 100%;
       position: absolute;
@@ -59,13 +65,3 @@
     }
   }
 }
-/*
-.card {
-  &__face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-
-  }
-}*/

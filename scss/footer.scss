@@ -28,6 +28,10 @@
     text-align: left;
     padding-left: $gutter/2;
     padding-right: $gutter/2;
+
+    @media(max-width: 800px) {
+      width: 50%;
+    }
   }
 
   &__title {

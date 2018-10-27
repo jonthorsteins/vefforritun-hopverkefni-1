@@ -1,6 +1,20 @@
 
 # Hópverkefni 1
 
+## Skil: Lýsing á verkefni
+
+Höfundar verkefnis:
+Jón Þorsteinsson - jth56@hi.is
+Krisófer Már Gíslason - kmg14@hi.is
+
+Keyrsla á verkefni:
+Til að keyra verkefnið þarf að ná í npm og setja það upp í verkefni. Þegar það hefur verið gert er verkefnið keyrt með því að keyra skipunina "npm run dev" úr möppu verkefnisins.
+
+Uppsetning á verkefni:
+Verkefnið styðst við sömu uppsetningu og gefin var af kennar. Allar scss skrár eru í scss möppu fyrir utan styles.scss sem tekur upplýsingar frá öllum hinum skránum. Ein skrá er fyrir header og ein fyrir footer og síðan skrá fyrir meginmál hverrar síðu.
+
+
+
 Verkefnið felst í því að smíða vef eftir forskrift.
 
 Gefnar eru [fyrirmyndir](utlit/) í `500px`, `800px` og `1500px` með grind ásamt `1500px` án grindar og yfirliti yfir virkni vefs í `utlit/video.mp4`.
