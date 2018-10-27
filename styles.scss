@@ -30,7 +30,6 @@ img { /* stylelint-disable-line */
 
 main { /* stylelint-disable-line */
   max-width: $max-width;
-  /*min-height: 100vh;*/
   margin: 0 auto;
 
   padding-left: 20px;
@@ -50,3 +49,4 @@ main { /* stylelint-disable-line */
 @import "scss/staff.scss";
 @import "scss/products.scss";
 @import "scss/index.scss";
+@import "scss/cart.scss";
